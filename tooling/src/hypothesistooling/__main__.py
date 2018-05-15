@@ -531,7 +531,7 @@ def ruby_task(fn):
     return task(if_changed=(tools.HYPOTHESIS_RUBY,))(run)
 
 
-@ruby_task
+@task()
 def lint_ruby():
     return
     bundle('exec', 'rake', 'checkformat')
