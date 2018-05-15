@@ -30,8 +30,8 @@ jobs:
   include:
     # Prechecks that we want to run first.
     - stage: precheck
-      env: TASK=lint-ruby
-    - env: TASK=check-whole-repo-tests
+      env: TASK=check-whole-repo-tests
+    - env: TASK=lint-ruby
 
 script:
     - ./build.sh
